@@ -16,7 +16,12 @@ class BallPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      child: Image.asset('images/ball1.png'),
+      child: TextButton(
+        child: Image.asset('images/ball1.png'),
+        onPressed: () {
+          print('I got clicked');
+        },
+      ),
     );
   }
 }
